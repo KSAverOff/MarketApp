@@ -13,14 +13,16 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="Node.js" Version="5.3.0" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DTOs\" />
-      <Folder Include="Endpoints\" />
-      <Folder Include="Models\" />
+      <_ContentIncludedByDefault Remove="client\package-lock.json" />
+      <_ContentIncludedByDefault Remove="client\package.json" />
+      <_ContentIncludedByDefault Remove="client\public\manifest.json" />
+      <_ContentIncludedByDefault Remove="client\tsconfig.json" />
     </ItemGroup>
 
 </Project>
